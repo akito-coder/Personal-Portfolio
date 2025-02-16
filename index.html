@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherwyne's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d6e60fbcdb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer/Developer</p>
+                <h1>Hi, I'm <span>Sherwyne</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------------------about me------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="bio">Hello! I'm Sherwyne, a college student passionate about web development and design. As an aspiring developer, I enjoy creating interactive, engaging websites that combine creativity with functionality. Through my projects, I've honed my skills in HTML, CSS, and Javascript. I'm also excited to learn more or dive deeper into frameworks and responsive design.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Knowledgeable in HTML,CSS,and somewhat in JavaScript</li>
+                            <li><span>Java</span><br>Knowledgeable in Java Programming Language</li>
+                            <li><span>Python</span><br>Knowledgeable in Python Programming Language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Beehive Notetaker About Programming</li>
+                            <li><span>2022 - 2023</span><br>Video Editor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Senior High Graduate at SLU-LHS</li>
+                            <li><span>2017</span><br>Junior High Graduate at SLU-LHS</li>
+                            <li><span>2013</span><br>Elementary Graduate at BCS</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------portfolio------------------------------------------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="product_landing_img.jpg" alt="product landing page">
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p>The goal was to create a visually appealing and engaging page that reflects the power and innovation of the Alienware M18 R2</p>
+                        <a href="https://alienware-prodland.vercel.app/?vercelToolbarCode=u6zTmjG1W9y54QU"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="tribute_img.png" alt="tribute page">
+                    <div class="layer">
+                        <h3>Tribute Page</h3>
+                        <p>This website showcases TenZ's journey, notable achievements, and his contributions to the world of esports especially Valorant.</p>
+                        <a href="https://tenz-valorant.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="technical_documentation_img.png" alt="tech doch">
+                    <div class="layer">
+                        <h3>Technical Documentation Page</h3>
+                        <p>This technical documentation page was created to help users learn Python basics in a structured, easy-to-navigate format.</p>
+                        <a href="https://python-techdoc.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/akito-coder/227464294TANGALIN/tree/main/freecodecamp" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------contact-------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sherwynet15@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 09507977902</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Wyne.15"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/wyyynnne/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/akito-coder"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Resume-SherwyneTangalin...docx" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Type your name here" required>
+                        <input type="email" name="Email" placeholder="Type your email here" required>
+                        <textarea name="Message" rows="6" placeholder="Type your message here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
